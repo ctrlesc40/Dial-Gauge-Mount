@@ -12,7 +12,7 @@ module Dial_Gauge(diameter, width, mount_diameter, mount_lenght, mount_center_di
 {
  
  translate([0, mount_center_distance, diameter/2 + mount_lenght]) rotate([90,0,0]) cylinder(h=width, d=diameter);
- cylinder(h=mount_lenght, d=mount_diameter);
+ cylinder(h=mount_lenght+1, d=mount_diameter);
  
  
     
